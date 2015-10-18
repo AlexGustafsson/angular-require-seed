@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>angular-require-seed</Name>
+    <RootNamespace>angular-require-seed</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8b02f5c0-09ff-4ada-87c4-ce1f6bdf30c6</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
+    <Content Include="package.json" />
+    <Content Include="www\index.html" />
+    <Content Include="www\lib\angular-css\.bower.json" />
+    <Content Include="www\lib\angular-css\bower.json" />
+    <Content Include="www\lib\angular-css\LICENSE.txt" />
+    <Content Include="www\lib\angular-css\README.md" />
+    <Content Include="www\lib\angular-loading-bar\.bower.json" />
+    <Content Include="www\lib\angular-loading-bar\bower.json" />
+    <Content Include="www\lib\angular-loading-bar\build\loading-bar.css" />
+    <Content Include="www\lib\angular-loading-bar\build\loading-bar.min.css" />
+    <Content Include="www\lib\angular-loading-bar\CHANGELOG.md" />
+    <Content Include="www\lib\angular-loading-bar\package.json" />
+    <Content Include="www\lib\angular-loading-bar\README.md" />
+    <Content Include="www\lib\angular-loading-bar\src\loading-bar.css" />
+    <Content Include="www\lib\angular-resource\.bower.json" />
+    <Content Include="www\lib\angular-resource\angular-resource.min.js.map" />
+    <Content Include="www\lib\angular-resource\bower.json" />
+    <Content Include="www\lib\angular-resource\package.json" />
+    <Content Include="www\lib\angular-resource\README.md" />
+    <Content Include="www\lib\angular-route\.bower.json" />
+    <Content Include="www\lib\angular-route\angular-route.min.js.map" />
+    <Content Include="www\lib\angular-route\bower.json" />
+    <Content Include="www\lib\angular-route\package.json" />
+    <Content Include="www\lib\angular-route\README.md" />
+    <Content Include="www\lib\angular\.bower.json" />
+    <Content Include="www\lib\angular\angular-csp.css" />
+    <Content Include="www\lib\angular\angular.min.js.gzip" />
+    <Content Include="www\lib\angular\angular.min.js.map" />
+    <Content Include="www\lib\angular\bower.json" />
+    <Content Include="www\lib\angular\package.json" />
+    <Content Include="www\lib\angular\README.md" />
+    <Content Include="www\lib\async\.bower.json" />
+    <Content Include="www\lib\async\bower.json" />
+    <Content Include="www\lib\async\CHANGELOG.md" />
+    <Content Include="www\lib\async\component.json" />
+    <Content Include="www\lib\async\deps\nodeunit.css" />
+    <Content Include="www\lib\async\dist\async.min.map" />
+    <Content Include="www\lib\async\package.json" />
+    <Content Include="www\lib\async\README.md" />
+    <Content Include="www\lib\jquery\.bower.json" />
+    <Content Include="www\lib\jquery\bower.json" />
+    <Content Include="www\lib\jquery\dist\jquery.min.map" />
+    <Content Include="www\lib\jquery\MIT-LICENSE.txt" />
+    <Content Include="www\lib\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="www\lib\requirejs-domready\.bower.json" />
+    <Content Include="www\lib\requirejs-domready\package.json" />
+    <Content Include="www\lib\requirejs-domready\README.md" />
+    <Content Include="www\lib\requirejs-plugins\.bower.json" />
+    <Content Include="www\lib\requirejs-plugins\bower.json" />
+    <Content Include="www\lib\requirejs-plugins\examples\async.html" />
+    <Content Include="www\lib\requirejs-plugins\examples\data\bar.json" />
+    <Content Include="www\lib\requirejs-plugins\examples\data\bar.md" />
+    <Content Include="www\lib\requirejs-plugins\examples\data\foo.json" />
+    <Content Include="www\lib\requirejs-plugins\examples\data\foo.md" />
+    <Content Include="www\lib\requirejs-plugins\examples\font.html" />
+    <Content Include="www\lib\requirejs-plugins\examples\goog.html" />
+    <Content Include="www\lib\requirejs-plugins\examples\image.html" />
+    <Content Include="www\lib\requirejs-plugins\examples\img\bike.jpg" />
+    <Content Include="www\lib\requirejs-plugins\examples\img\lol_cat.jpg" />
+    <Content Include="www\lib\requirejs-plugins\examples\img\software_engineer.png" />
+    <Content Include="www\lib\requirejs-plugins\examples\json.html" />
+    <Content Include="www\lib\requirejs-plugins\examples\js\foo.bar" />
+    <Content Include="www\lib\requirejs-plugins\examples\mdown.html" />
+    <Content Include="www\lib\requirejs-plugins\examples\noext.html" />
+    <Content Include="www\lib\requirejs-plugins\README.mdown" />
+    <Content Include="www\lib\requirejs\.bower.json" />
+    <Content Include="www\lib\requirejs\bower.json" />
+    <Content Include="www\lib\requirejs\README.md" />
+    <Content Include="www\partials\helloWorld\index.html" />
+    <Content Include="www\partials\helloWorld\style.css" />
+    <Content Include="www\views\default\index.html" />
+    <Content Include="www\views\default\style.css" />
+    <Content Include="www\views\error\404.html" />
+    <Content Include="www\views\error\style.css" />
+    <Content Include="www\views\helloworld\index.html" />
+    <Content Include="www\views\helloworld\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="www\" />
+    <Folder Include="www\js\controllers\" />
+    <Folder Include="www\js\directives\" />
+    <Folder Include="www\js\factories\" />
+    <Folder Include="www\js\filters\" />
+    <Folder Include="www\js\services\" />
+    <Folder Include="www\lib\" />
+    <Folder Include="www\lib\angular-css\" />
+    <Folder Include="www\lib\angular-loading-bar\" />
+    <Folder Include="www\lib\angular-loading-bar\build\" />
+    <Folder Include="www\lib\angular-loading-bar\src\" />
+    <Folder Include="www\lib\angular-resource\" />
+    <Folder Include="www\lib\angular-route\" />
+    <Folder Include="www\lib\angular\" />
+    <Folder Include="www\lib\async\" />
+    <Folder Include="www\lib\async\deps\" />
+    <Folder Include="www\lib\async\dist\" />
+    <Folder Include="www\lib\async\lib\" />
+    <Folder Include="www\lib\async\mocha_test\" />
+    <Folder Include="www\lib\async\mocha_test\support\" />
+    <Folder Include="www\lib\async\perf\" />
+    <Folder Include="www\lib\async\support\" />
+    <Folder Include="www\lib\jquery\" />
+    <Folder Include="www\lib\jquery\dist\" />
+    <Folder Include="www\lib\jquery\src\" />
+    <Folder Include="www\lib\jquery\src\ajax\" />
+    <Folder Include="www\lib\jquery\src\ajax\var\" />
+    <Folder Include="www\lib\jquery\src\attributes\" />
+    <Folder Include="www\lib\jquery\src\core\" />
+    <Folder Include="www\lib\jquery\src\core\var\" />
+    <Folder Include="www\lib\jquery\src\css\" />
+    <Folder Include="www\lib\jquery\src\css\var\" />
+    <Folder Include="www\lib\jquery\src\data\" />
+    <Folder Include="www\lib\jquery\src\data\var\" />
+    <Folder Include="www\lib\jquery\src\effects\" />
+    <Folder Include="www\lib\jquery\src\event\" />
+    <Folder Include="www\lib\jquery\src\exports\" />
+    <Folder Include="www\lib\jquery\src\manipulation\" />
+    <Folder Include="www\lib\jquery\src\manipulation\var\" />
+    <Folder Include="www\lib\jquery\src\queue\" />
+    <Folder Include="www\lib\jquery\src\sizzle\" />
+    <Folder Include="www\lib\jquery\src\sizzle\dist\" />
+    <Folder Include="www\lib\jquery\src\traversing\" />
+    <Folder Include="www\lib\jquery\src\traversing\var\" />
+    <Folder Include="www\lib\jquery\src\var\" />
+    <Folder Include="www\lib\requirejs-domready\" />
+    <Folder Include="www\lib\requirejs-plugins\" />
+    <Folder Include="www\lib\requirejs-plugins\examples\" />
+    <Folder Include="www\lib\requirejs-plugins\examples\data\" />
+    <Folder Include="www\lib\requirejs-plugins\examples\img\" />
+    <Folder Include="www\lib\requirejs-plugins\examples\js\" />
+    <Folder Include="www\lib\requirejs-plugins\lib\" />
+    <Folder Include="www\lib\requirejs-plugins\src\" />
+    <Folder Include="www\lib\requirejs\" />
+    <Folder Include="www\js\" />
+    <Folder Include="www\img\" />
+    <Folder Include="www\css\" />
+    <Folder Include="www\partials\" />
+    <Folder Include="www\partials\helloWorld\" />
+    <Folder Include="www\views\" />
+    <Folder Include="www\views\default\" />
+    <Folder Include="www\views\error\" />
+    <Folder Include="www\views\helloworld\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="www\js\app.js" />
+    <Compile Include="www\js\controllers\MainController.js" />
+    <Compile Include="www\js\directives\helloWorld_directive.js" />
+    <Compile Include="www\js\factories\fooBar_factory.js" />
+    <Compile Include="www\js\filters\range_filter.js" />
+    <Compile Include="www\js\init.js" />
+    <Compile Include="www\js\services.js" />
+    <Compile Include="www\js\routes.js" />
+    <Compile Include="www\js\filters.js" />
+    <Compile Include="www\js\factories.js" />
+    <Compile Include="www\js\directives.js" />
+    <Compile Include="www\js\controller.js" />
+    <Compile Include="www\js\services\version_service.js" />
+    <Compile Include="www\lib\angular-css\angular-css.js" />
+    <Compile Include="www\lib\angular-css\angular-css.min.js" />
+    <Compile Include="www\lib\angular-css\Gruntfile.js" />
+    <Compile Include="www\lib\angular-loading-bar\build\loading-bar.js" />
+    <Compile Include="www\lib\angular-loading-bar\build\loading-bar.min.js" />
+    <Compile Include="www\lib\angular-loading-bar\Gruntfile.js" />
+    <Compile Include="www\lib\angular-loading-bar\index.js" />
+    <Compile Include="www\lib\angular-loading-bar\LICENSE" />
+    <Compile Include="www\lib\angular-loading-bar\src\loading-bar.js" />
+    <Compile Include="www\lib\angular-resource\angular-resource.js" />
+    <Compile Include="www\lib\angular-resource\angular-resource.min.js" />
+    <Compile Include="www\lib\angular-resource\index.js" />
+    <Compile Include="www\lib\angular-route\angular-route.js" />
+    <Compile Include="www\lib\angular-route\angular-route.min.js" />
+    <Compile Include="www\lib\angular-route\index.js" />
+    <Compile Include="www\lib\angular\angular.js" />
+    <Compile Include="www\lib\angular\angular.min.js" />
+    <Compile Include="www\lib\angular\index.js" />
+    <Compile Include="www\lib\async\deps\nodeunit.js" />
+    <Compile Include="www\lib\async\dist\async.js" />
+    <Compile Include="www\lib\async\dist\async.min.js" />
+    <Compile Include="www\lib\async\karma.conf.js" />
+    <Compile Include="www\lib\async\lib\async.js" />
+    <Compile Include="www\lib\async\LICENSE" />
+    <Compile Include="www\lib\async\Makefile" />
+    <Compile Include="www\lib\async\mocha_test\compose.js" />
+    <Compile Include="www\lib\async\mocha_test\forever.js" />
+    <Compile Include="www\lib\async\mocha_test\support\is_browser.js" />
+    <Compile Include="www\lib\async\perf\benchmark.js" />
+    <Compile Include="www\lib\async\perf\memory.js" />
+    <Compile Include="www\lib\async\perf\suites.js" />
+    <Compile Include="www\lib\async\support\sync-package-managers.js" />
+    <Compile Include="www\lib\jquery\dist\jquery.js" />
+    <Compile Include="www\lib\jquery\dist\jquery.min.js" />
+    <Compile Include="www\lib\jquery\src\ajax.js" />
+    <Compile Include="www\lib\jquery\src\ajax\jsonp.js" />
+    <Compile Include="www\lib\jquery\src\ajax\load.js" />
+    <Compile Include="www\lib\jquery\src\ajax\parseJSON.js" />
+    <Compile Include="www\lib\jquery\src\ajax\parseXML.js" />
+    <Compile Include="www\lib\jquery\src\ajax\script.js" />
+    <Compile Include="www\lib\jquery\src\ajax\var\nonce.js" />
+    <Compile Include="www\lib\jquery\src\ajax\var\rquery.js" />
+    <Compile Include="www\lib\jquery\src\ajax\xhr.js" />
+    <Compile Include="www\lib\jquery\src\attributes.js" />
+    <Compile Include="www\lib\jquery\src\attributes\attr.js" />
+    <Compile Include="www\lib\jquery\src\attributes\classes.js" />
+    <Compile Include="www\lib\jquery\src\attributes\prop.js" />
+    <Compile Include="www\lib\jquery\src\attributes\support.js" />
+    <Compile Include="www\lib\jquery\src\attributes\val.js" />
+    <Compile Include="www\lib\jquery\src\callbacks.js" />
+    <Compile Include="www\lib\jquery\src\core.js" />
+    <Compile Include="www\lib\jquery\src\core\access.js" />
+    <Compile Include="www\lib\jquery\src\core\init.js" />
+    <Compile Include="www\lib\jquery\src\core\parseHTML.js" />
+    <Compile Include="www\lib\jquery\src\core\ready.js" />
+    <Compile Include="www\lib\jquery\src\core\var\rsingleTag.js" />
+    <Compile Include="www\lib\jquery\src\css.js" />
+    <Compile Include="www\lib\jquery\src\css\addGetHookIf.js" />
+    <Compile Include="www\lib\jquery\src\css\curCSS.js" />
+    <Compile Include="www\lib\jquery\src\css\defaultDisplay.js" />
+    <Compile Include="www\lib\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Compile Include="www\lib\jquery\src\css\support.js" />
+    <Compile Include="www\lib\jquery\src\css\swap.js" />
+    <Compile Include="www\lib\jquery\src\css\var\cssExpand.js" />
+    <Compile Include="www\lib\jquery\src\css\var\getStyles.js" />
+    <Compile Include="www\lib\jquery\src\css\var\isHidden.js" />
+    <Compile Include="www\lib\jquery\src\css\var\rmargin.js" />
+    <Compile Include="www\lib\jquery\src\css\var\rnumnonpx.js" />
+    <Compile Include="www\lib\jquery\src\data.js" />
+    <Compile Include="www\lib\jquery\src\data\accepts.js" />
+    <Compile Include="www\lib\jquery\src\data\Data.js" />
+    <Compile Include="www\lib\jquery\src\data\var\data_priv.js" />
+    <Compile Include="www\lib\jquery\src\data\var\data_user.js" />
+    <Compile Include="www\lib\jquery\src\deferred.js" />
+    <Compile Include="www\lib\jquery\src\deprecated.js" />
+    <Compile Include="www\lib\jquery\src\dimensions.js" />
+    <Compile Include="www\lib\jquery\src\effects.js" />
+    <Compile Include="www\lib\jquery\src\effects\animatedSelector.js" />
+    <Compile Include="www\lib\jquery\src\effects\Tween.js" />
+    <Compile Include="www\lib\jquery\src\event.js" />
+    <Compile Include="www\lib\jquery\src\event\ajax.js" />
+    <Compile Include="www\lib\jquery\src\event\alias.js" />
+    <Compile Include="www\lib\jquery\src\event\support.js" />
+    <Compile Include="www\lib\jquery\src\exports\amd.js" />
+    <Compile Include="www\lib\jquery\src\exports\global.js" />
+    <Compile Include="www\lib\jquery\src\intro.js" />
+    <Compile Include="www\lib\jquery\src\jquery.js" />
+    <Compile Include="www\lib\jquery\src\manipulation.js" />
+    <Compile Include="www\lib\jquery\src\manipulation\support.js" />
+    <Compile Include="www\lib\jquery\src\manipulation\var\rcheckableType.js" />
+    <Compile Include="www\lib\jquery\src\manipulation\_evalUrl.js" />
+    <Compile Include="www\lib\jquery\src\offset.js" />
+    <Compile Include="www\lib\jquery\src\outro.js" />
+    <Compile Include="www\lib\jquery\src\queue.js" />
+    <Compile Include="www\lib\jquery\src\queue\delay.js" />
+    <Compile Include="www\lib\jquery\src\selector-native.js" />
+    <Compile Include="www\lib\jquery\src\selector-sizzle.js" />
+    <Compile Include="www\lib\jquery\src\selector.js" />
+    <Compile Include="www\lib\jquery\src\serialize.js" />
+    <Compile Include="www\lib\jquery\src\sizzle\dist\sizzle.js" />
+    <Compile Include="www\lib\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Compile Include="www\lib\jquery\src\traversing.js" />
+    <Compile Include="www\lib\jquery\src\traversing\findFilter.js" />
+    <Compile Include="www\lib\jquery\src\traversing\var\rneedsContext.js" />
+    <Compile Include="www\lib\jquery\src\var\arr.js" />
+    <Compile Include="www\lib\jquery\src\var\class2type.js" />
+    <Compile Include="www\lib\jquery\src\var\concat.js" />
+    <Compile Include="www\lib\jquery\src\var\hasOwn.js" />
+    <Compile Include="www\lib\jquery\src\var\indexOf.js" />
+    <Compile Include="www\lib\jquery\src\var\pnum.js" />
+    <Compile Include="www\lib\jquery\src\var\push.js" />
+    <Compile Include="www\lib\jquery\src\var\rnotwhite.js" />
+    <Compile Include="www\lib\jquery\src\var\slice.js" />
+    <Compile Include="www\lib\jquery\src\var\strundefined.js" />
+    <Compile Include="www\lib\jquery\src\var\support.js" />
+    <Compile Include="www\lib\jquery\src\var\toString.js" />
+    <Compile Include="www\lib\jquery\src\wrap.js" />
+    <Compile Include="www\lib\requirejs-domready\domReady.js" />
+    <Compile Include="www\lib\requirejs-domready\LICENSE" />
+    <Compile Include="www\lib\requirejs-plugins\examples\img\relativePath.js" />
+    <Compile Include="www\lib\requirejs-plugins\examples\js\foo" />
+    <Compile Include="www\lib\requirejs-plugins\lib\Markdown.Converter.js" />
+    <Compile Include="www\lib\requirejs-plugins\lib\require.js" />
+    <Compile Include="www\lib\requirejs-plugins\lib\text.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\async.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\depend.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\font.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\goog.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\image.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\json.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\mdown.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\noext.js" />
+    <Compile Include="www\lib\requirejs-plugins\src\propertyParser.js" />
+    <Compile Include="www\lib\requirejs\require.js" />
+    <Compile Include="www\partials\helloWorld\controller.js" />
+    <Compile Include="www\views\default\controller.js" />
+    <Compile Include="www\views\error\controller.js" />
+    <Compile Include="www\views\helloworld\controller.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

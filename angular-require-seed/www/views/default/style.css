@@ -1,0 +1,11 @@
+﻿/*This CSS will be added whenever the view is in use. Remember that the style is part of the global scope*/
+.fancy-text{
+    font-family:'Comic Sans MS';
+    font-size:16px;
+    color:deeppink;
+}
+
+.fancy-text::first-letter{
+    font-size:22px;
+    color:lime;
+}

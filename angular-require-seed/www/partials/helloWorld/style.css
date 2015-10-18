@@ -1,0 +1,9 @@
+﻿/*This CSS will be added whenever the directive is in use. Remember that the style is part of the global scope*/
+.hello-world{
+    padding:10px;
+
+    font-family:'Comic Sans MS';
+    font-size:22px;
+    color:lightseagreen;
+    background-color:yellow;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "angular-require-seed",
+  "version": "0.1",
+  "main": "www/index.html",
+  "ignore": [
+    "**/.*",
+    "libs"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angular-route": "latest",
+    "angular-css": "latest",
+    "angular-loading-bar": "latest",
+    "async": "latest",
+    "jquery": "latest",
+    "requirejs": "latest",
+    "requirejs-domready": "latest",
+    "requirejs-plugins": "latest"
+  }
+}

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<head>
+    <meta charset="utf-8" />
+    <title>Modular Angular Web Application With Require JS</title>
+    
+    <style>
+        /*This style is added to chosen elements when loading to asure that there is no flicker*/
+        [ng-cloak]{
+            opacity: 0;
+        }
+    </style>
+
+    <!--Style for the loading bar-->
+    <link rel="stylesheet" href='/lib/angular-loading-bar/build/loading-bar.min.css' type='text/css' media='all'/>
+
+    <!--Tell Angular where the root is for routing-->
+    <base href="/" />
+</head>
+<body ng-controller="MainController">
+
+    <!--Exceptional landing page-->
+    <h1>Hello there!</h1>
+    <h2>Welcome to this exotic webpage.</h2>
+    <h3>It might not win any style contests, but hey, it's fully modular and lazily loaded!</h3>
+
+    <!--State of the art, user-friendly navigation-->
+    <button ng-click='navigate("/helloworld")'>Go to the "Hello World" view</button>
+    <button ng-click='navigate("/")'>Go to the default view</button>
+    <button ng-click='navigate("/thispagemaynotexistbutmyfeelingsdo")'>Go to a non existing view</button>
+
+    <!--View controller-->
+    <div ng-view ng-cloak>
+        <!--The selected view will be shown in here-->
+    </div>
+
+    <!--Include Require JS-->
+    <script data-main="js/init" src="lib/requirejs/require.js"></script>
+</body>
+</html>

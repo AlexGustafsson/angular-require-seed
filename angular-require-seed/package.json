@@ -1,0 +1,8 @@
+{
+  "name": "angular-require-seed",
+  "version": "0.0.1",
+  "description": "A fully modular, lazily-loded Angular web application seed for RequireJS",
+  "author": {
+    "name": "Alex Gustafsson"
+  }
+}
