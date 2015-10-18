@@ -5,16 +5,16 @@
 
 'use strict';
 
-define(["require", "ngCss", 
+define(["require", "angular", "ngCss", 
         'directives/helloWorld_directive'
         //Add further directive dependencies here
     ], 
-    function (require, css,
+    function (require, angular, css,
         helloWorldDirective
         //Add further directive dependencies here
     ) {
         //Define the MainApp.directives module. Require door3.css for lazily loading css.
-        require('angular').module('MainApp.directives', []).
+        angular.module('MainApp.directives', []).
             directive('helloWorld', helloWorldDirective); //An example directive
 
         //Here you can add further directives if necessary.
