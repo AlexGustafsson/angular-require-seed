@@ -8,9 +8,14 @@
 define(['require', 'app',
         //Require view controllers
         'views/default/controller.js',
-        'views/helloworld/controller.js',
+        'views/helloworld/controller.js'
+        //Add further route dependencies here
     ], 
-    function (require, app, defaultController, helloWorldController) {
+    function (require, app,
+        defaultController,
+        helloWorldController
+        //Add further route dependencies here
+    ) {
     
     return app.config(['$routeProvider', '$locationProvider', 'cfpLoadingBarProvider', function ($routeProvider, $locationProvider, cfpLoadingBarProvider) {
             

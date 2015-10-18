@@ -8,6 +8,7 @@ define(function () {
     //Set up dependencies
     return ["$timeout", 
         function ($timeout) {
+            //arg1 and arg2 are arguments passed in when creating the object
             return function (arg1, arg2){
                 //Non-accessable values
                 var privateFoo = "foo";

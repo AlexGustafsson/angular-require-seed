@@ -5,10 +5,17 @@
 
 'use strict';
 
-define(function (require) {
-    //Define the MainApp.directives module. Require door3.css for lazily loading css.
-    require('angular').module('MainApp.directives', ["door3.css"]).
-        directive('helloWorld', require('directives/helloWorld_directive')); //An example directive
+define(["require", "ngCss", 
+        'directives/helloWorld_directive'
+        //Add further directive dependencies here
+    ], 
+    function (require, css,
+        helloWorldDirective
+        //Add further directive dependencies here
+    ) {
+        //Define the MainApp.directives module. Require door3.css for lazily loading css.
+        require('angular').module('MainApp.directives', []).
+            directive('helloWorld', helloWorldDirective); //An example directive
 
-    //Here you can add further directives if necessary.
+        //Here you can add further directives if necessary.
 });

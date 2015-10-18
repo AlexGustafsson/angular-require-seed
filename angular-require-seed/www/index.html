@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<html lang="en" ng-app>
 <head>
     <meta charset="utf-8" />
     <title>Modular Angular Web Application With Require JS</title>
@@ -29,11 +29,15 @@
     <button ng-click='navigate("/helloworld")'>Go to the "Hello World" view</button>
     <button ng-click='navigate("/")'>Go to the default view</button>
     <button ng-click='navigate("/thispagemaynotexistbutmyfeelingsdo")'>Go to a non existing view</button>
+    <br />
+    <button ng-click="testFactory()">Test FooBar factory</button>
 
     <!--View controller-->
     <div ng-view ng-cloak>
         <!--The selected view will be shown in here-->
     </div>
+
+    <p>Version: {{version.version}} (major: {{version.major}}, minor: {{version.minor}})</p>
 
     <!--Include Require JS-->
     <script data-main="js/init" src="lib/requirejs/require.js"></script>

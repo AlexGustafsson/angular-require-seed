@@ -6,7 +6,6 @@
 
 define(function () {
     return function ($scope, element, attributes) {
-        
         //Function to alert user
         $scope.alert = function () {
             alert("Hello World!");
